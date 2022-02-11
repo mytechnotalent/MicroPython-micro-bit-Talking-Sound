@@ -8,12 +8,21 @@ SPEED = 95
 
 while True:
     display.show(Image.SURPRISED)
+    
     say('Sound On', speed=SPEED)
+    
     pin1.write_digital(1)
+    
     display.show(Image.HAPPY)
+    
     sleep_ms(1000)
+    
     display.show(Image.SURPRISED)
+    
     say('Sound Off', speed=SPEED)
+    
     display.show(Image.HAPPY)
+    
     pin1.write_digital(0)
+    
     sleep_ms(1000)
